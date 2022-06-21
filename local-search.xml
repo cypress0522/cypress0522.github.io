@@ -119,7 +119,7 @@
     <link href="/"/>
     <url>/</url>
     
-    <content type="html"><![CDATA[<div class="note note-info">            <p><strong>INFO</strong><br>或许能陪你聊会儿天？</p>          </div><script src="https://utteranc.es/client.js"        repo="cypress0522/cypress0522.github.io"        issue-number="[ENTER ISSUE NUMBER HERE]"        label="评论"        theme="dark-blue"        crossorigin="anonymous"        async></script>]]></content>
+    <content type="html"><![CDATA[<div class="note note-info">            <p><strong>STORYTIME</strong><br>或许能坐下来陪你聊会儿天？</p>          </div><script src="https://utteranc.es/client.js"        repo="cypress0522/cypress0522.github.io"        issue-term="pathname"        theme="github-light"        crossorigin="anonymous"        async></script>]]></content>
     
   </entry>
   
