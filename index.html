@@ -629,13 +629,13 @@
       
         jQuery.ajax({
           type: 'GET',
-          url: 'https://api.dzzui.com/api/yiyan?format=json',
+          url: 'https://api.eatrice.top',
           headers: {},
           dataType: 'json',
           success: function(result) {
             var apiText;
             if (result) {
-              var keys = 'text'.split(',');
+              var keys = 'Content'.split(',');
               if (result instanceof Array) {
                 result = result[0];
               }
@@ -653,7 +653,7 @@
           },
           error: function(xhr, status, error) {
             if (error) {
-              console.error('Failed to request https://api.dzzui.com/api/yiyan?format=json:', error);
+              console.error('Failed to request https://api.eatrice.top:', error);
             }
             typing(text);
           }
