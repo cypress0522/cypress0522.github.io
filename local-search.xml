@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>unlimited-errors</title>
+    <link href="/2022/06/23/unlimited-errors/"/>
+    <url>/2022/06/23/unlimited-errors/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-warning">            <p><strong>目前正在努力ing…</strong><br>利用<code>error()</code>与<code>pcall()</code>进行lua自定义报错</p>          </div><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><p>简言之让报错更好看一点，更容易理解一点。</p></blockquote><script src="https://utteranc.es/client.js"        repo="cypress0522/cypress0522.github.io"        issue-term="pathname"        theme="github-light"        crossorigin="anonymous"        async></script>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+      <category>Lua</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Dice</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>chat-ActObjectValue 2.0</title>
     <link href="/2022/06/18/chat-ActObjectValue-2.0/"/>
     <url>/2022/06/18/chat-ActObjectValue-2.0/</url>
