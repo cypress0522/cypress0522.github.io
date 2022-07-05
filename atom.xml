@@ -6,7 +6,7 @@
   <link href="https://cypress0522.github.io/atom.xml" rel="self"/>
   
   <link href="https://cypress0522.github.io/"/>
-  <updated>2022-06-24T09:01:15.880Z</updated>
+  <updated>2022-07-05T18:31:56.988Z</updated>
   <id>https://cypress0522.github.io/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在dice里关于ai的应用</title>
+    <link href="https://cypress0522.github.io/2022/07/06/ai-reply/"/>
+    <id>https://cypress0522.github.io/2022/07/06/ai-reply/</id>
+    <published>2022-07-05T16:00:00.000Z</published>
+    <updated>2022-07-05T18:31:56.988Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note note-success">                      </div><blockquote><p>使用《署名—非商业性使用—相同方式共享 4.0 协议国际版》（CC BY-NC-SA 4.0）进行授权。<br><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hans">https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.zh-Hans</a></p></blockquote><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>非常无聊，于是用正则以及dice的lua回复写了一个调用ai实例，总结了两个ai，青云客与思知。</p><p>使用方法：<br>调用青云客:setUserConf(getDiceQQ(),’ai’,1)<br>调用思知:setUserConf(getDiceQQ(),’ai’,2)</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs lua">.reply set<br>Regex=(.*)<br>Lua=<br><span class="hljs-keyword">if</span> getUserConf(getDiceQQ(),<span class="hljs-string">&#x27;ai&#x27;</span>) == <span class="hljs-number">1</span> <span class="hljs-keyword">then</span><br>url = <span class="hljs-string">&quot;http://api.qingyunke.com/api.php?key=free&amp;appid=0&amp;msg=&quot;</span> .. msg.fromMsg<br>res,data = http.get(url)<br>json = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;json&quot;</span>)<br>j = json.decode(data)<br><span class="hljs-keyword">return</span> j.content<br><span class="hljs-keyword">elseif</span> getUserConf(getDiceQQ(),<span class="hljs-string">&#x27;ai&#x27;</span>) == <span class="hljs-number">2</span> <span class="hljs-keyword">then</span><br>url = <span class="hljs-string">&quot;https://api.ownthink.com/bot?spoken=&quot;</span> .. msg.fromMsg<br>res,data = http.get(url)<br>json = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;json&quot;</span>)<br>j = json.decode(data)<br><span class="hljs-keyword">return</span> j.data.info.text<br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure><script src="https://utteranc.es/client.js"        repo="cypress0522/cypress0522.github.io"        issue-term="pathname"        theme="github-light"        crossorigin="anonymous"        async></script>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note note-success&quot;&gt;
+            
+          &lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;使用《署名—非商业性使用—相同方式共享 4.0 协议国际版》（CC BY-NC-SA 4.0）进行授权。&lt;br&gt;&lt;a hr</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://cypress0522.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="Lua" scheme="https://cypress0522.github.io/categories/%E6%8A%80%E6%9C%AF/Lua/"/>
+    
+    
+    <category term="Dice" scheme="https://cypress0522.github.io/tags/Dice/"/>
+    
+    <category term="AI" scheme="https://cypress0522.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>reborn 重开模拟器</title>
